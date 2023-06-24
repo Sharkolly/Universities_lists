@@ -38,7 +38,7 @@ const FetchData = () => {
     useEffect(() => {
         setLoading(true);
         setTimeout(() => {
-            // dataFetch(url);
+            dataFetch(url);
             setLoading(false);
         }, 2000);
     }, [url]);
