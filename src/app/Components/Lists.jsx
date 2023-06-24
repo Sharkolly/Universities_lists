@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Lists = ({ lists }) => {
+const Lists = ({ lists, fetchData }) => {
 	
-	const listItem = lists.map((list, index) => (
+		const listItem = lists.map((list, index) => (
 		<div className='list' key={index}>
 			<li className='lists'>{list.name}</li>
 			<a href={list.web_pages}>View</a>
