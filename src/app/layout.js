@@ -1,4 +1,10 @@
 import './style.css'
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({
+  weight: ['400', '600', '800'],
+  subsets: ['latin']
+})
 
 export const metadata = {
   title: 'List of Universities',
@@ -8,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='body'>{children}</body>
+      <body className= 'body' >{children}</body>
     </html>
   )
 }
